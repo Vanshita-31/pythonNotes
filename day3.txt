@@ -1,0 +1,135 @@
+Data types:
+-----------
+data type represent the type of data represented by variable
+
+x=10
+x=True
+x=10.5
+Dynamically typed programming language
+
+int x = 10;
+boolean b = true;
+Statically typed : Java, c , c++
+
+int 
+float 
+complex
+bool
+str
+
+list 
+tuple
+set 
+fronzenset
+dict
+
+bytes
+bytearray
+range
+None
+
+The 3 most commonly used python's in built functions
+-----------------------------------------------------
+x=10 ; 10 is object and x is reference variable to call that objectid
+1. print(x)
+2. type(x)
+3. id(x) --> give the address of the object
+
+x=10
+print(x)
+type(x)
+id(x) --> in which memory (address) is showed in this
+
+int data type:
+--------------
+To represent integral values (values which are having no decimal points)
+x=10 --> integral value
+x=10.5
+
+
+in java,
+byte: -128 to +127
+short: -32768 to 32767
+int: -2147483648 to 2147483647
+long: -2^63 to 2^63-1
+
+we have only one data type to represent numerical value
+
+we can represent int values in multiple ways:
+
+1. decimal form (base-10) -> default and most used
+2. binary form (base-2)
+3. octal form (base-8)
+4. hexa decimal form (base-16)
+
+1. Decimal form(base-10):
+--------------------------
+The allowed digits are 0 to 9.
+x=12345
+
+2. Binary form(base-2):
+------------------------
+The allowed digits are: 0 and 1
+The number should be prefixed with 0b or 0B.
+
+a = 1111 , is this decimal or binary?
+b = 0b1111
+b = 0B1111 
+
+(1111) binary to decimal 
+2^0 + 2^1 + 2^2 + 2^3 = 1+2+4+8 = 15.
+
+what are types of a and b?
+
+3. Octal Form(base-8):
+----------------------
+The allowed digits are from 0 to 7
+The literal values should be prefixed with: 0o or 0O 
+
+x=0O123
+print(x)
+
+(123) octal to decimal
+(123) octal = 8^0 + 8^1 + 8^2 = 83
+
+4. Hexadecimal(Base-16):
+-------------------------
+The allowed digits are from 0 to 9,A to F
+A-->10
+B-->11
+C-->12
+D-->13
+E-->14
+F-->15
+
+A-F or a-f can be used
+The literal value should be prefixed with 0x or 0X
+
+
+x=123Face , valid or invalid?
+x=0X123Face
+
+a=10
+b=OB10
+c=O010
+d=0X10
+print(a,b,c,d)
+
+Base conversion functions:
+--------------------------
+1. bin() -> binary
+2. oct() -> octal 
+3. hex() -> hexadecimal
+
+10 -> binary
+bin(10) 
+
+divide by 2. to convert decimal to binary 
+
+print(bin(10))
+print(bin(0O10))
+print(bin(0X10))
+
+x can be any value like octal or decimal or hexadecimal.
+bin(0X123)
+oct(10) -> divide by 8
