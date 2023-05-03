@@ -1,0 +1,114 @@
+float data type:
+----------------
+number with decimal point
+
+f=1.234
+octal,hex,binary is not accepatable in float data type.
+
+Exponential form/Scientific notation
+f=1.2e3  => 1.2 x 10^3
+f=1.2E3  => 1.2 x 10^3 (capital E also works)
+
+We can represent big values in less memory
+120000000000000000000000000000000000000000000000.0
+1.2e18
+
+complex data type:
+------------------
+
+format:
+
+a+bj -> python
+
+a is real part
+b is imaginary part
+
+j is fixed variable
+j^2 = -1 
+j = (-1)^(1/2)
+
+c=10+23j
+c=10+23J
+
+For a,b we can use both int and float values.
+c=10.5+20.6j
+
+Real part can take any value -> binary,octal,hex
+For imaginary part compulsory we must use decimal only. (int / float)
+
+We can perform mathematical operations (+,-,*,/)
+
+10*20j=200j = 10(0+20j)
+a.real
+a.imag
+
+bool data type:
+----------------
+boolean values/logical values
+
+True
+False
+
+comparison operations
+
+if marks>90:
+	print('O Grade')
+
+age = 30
+age < 25
+
+True ---> 1
+False ---> 0
+
+True+True
+True+False
+True*False
+True/False
+
+str data type:
+--------------
+str --> string
+
+Any sequence of character with either single quotes or double quotes
+s=durga
+s='durga'
+s="durga"
+
+s='durga
+	software
+		solutions'
+		
+To define multi-line string literals  we cant use single or double quotes.
+
+triple quotes
+triple singlequotes
+triple doublequotes
+
+Hi , i am not going to attend today's lecture
+want to use single and double quotes inside the string?
+
+s='''python'''
+s=''python''
+s='python' 
+
+which is best practice? run it on python!
+
+Hi , i am not going to attend today\'s lecture (USING Backslash)
+it will tell python that it is not string but a symbol
+
+1. To define multi line string literals
+2. To use single quote or double quote as normal character
+
+s='durga'
+to access indiviual character, we use indexing
+s[0]
+s[1]
+s[10]-->IndexError
+
+Negative index is also possible
+
+Positive index is always from left to right.
+Negative index is always from right to left.
+
+How to access the last character if the string is too long? s[-1]
+how to access the last character if the string is too long without negative indexing? s[len(s)-1]
