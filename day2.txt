@@ -1,0 +1,92 @@
+Identifier :
+A name in python program is called identifier.
+variable name 
+class name
+function name - outside the class 
+method name - defined in the class 
+
+x=10
+def f1():
+	print('f1 function')
+class Test:
+	def m1(self):
+		print('m1 method')
+		
+what are the identifier in this?
+
+Rules to define identifier in python :
+1. The only allowed characters
+a to z , A to Z , 0 to 9 , _ (underscore)(only allowed)
+
+cash=1000
+ca$h=1000
+cash_amount=1000
+
+2. identifier should not start with digit
+total123=1000
+123total=1000 -- invalid
+
+3. Python identifies are case sensitive 
+total=10
+Total=20
+TOTAL=30
+
+4. no length limit for variable name, but not recommended to take too lengthy identifiers.
+
+5. we cannot use keyword or reserved words as identifiers
+x=10
+if=20 // keyword or reserved word
+
+Q. WHich of the following are valid python identifier?
+
+123total
+total123
+java2share
+ca$h
+_abc_abc_
+def
+if 
+class
+
+***Note :
+x -> normal / public variable
+_x -> protected variable 
+__x -> private variable
+
+******************************
+not recommended to use this
+__x__ -> language level predefined name/magical name
+__name__
+__add__
+__doc__
+__main__
+******************************
+
+Reserved words:
+---------------
+somewords are reserved to represent some functionality or meaning 
+A --> apple 
+apple is reserved word for fruit
+
+We have 35 reserved words
+True,False,None
+and,or,not,is 
+if,elif,else
+while,for,break,continue,return,in,yield
+try,except,finally,raise,assert
+import,from,as,class,def,pass,global,nonlocal,lambda,del,with
+async,await
+
+keyword ==> module name
+kwlist ==> variable name
+import keyword
+keyword.kwlist
+
+1. All reserved words contain only alphabets symbols
+2. The only reserved words contains upper case alphabet symbols -- True,False,None ==> Values/Reserved literals (can be assigned to the variables) (reserved literals)
+3. switch statement is not applicable in python
+4. do-while loop is not there
+5. no keywords like int,float etc
+
+Reserved literal : can represent some value
+keyword : represents some functionality
