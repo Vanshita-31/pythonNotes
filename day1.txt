@@ -1,0 +1,76 @@
+syllabus:
+---------
+1. language fundamentals
+    -- 14 data types
+2. Operators
+3. Input and output statements
+4. Flow controls
+
+5. String data type
+6. List data structure
+
+x=10 // holds one value
+x=[1,2,3,4,5] // holds multiple values
+
+7. tuple data structure
+8. set data structures
+9. dictionary data structures
+
+
+10. Functions
+11. Modules
+12. Packages
+
+13. Object oriented programming (OOPs)
+14. Exception Handling
+15. File handling
+16. Regular Expressions and web scraping
+17. Multithreading -- to improve performance
+18. Python database connectivity
+19. Generators
+20. Decorators
+21. Assertions
+22. Logging Mechanism
+
+
+1. Language fundamentals:
+-------------------------
+Python is general purpose high level programming language.
+
+we are not required to declare the datatypes explicitly(dynamically typed programming language)
+
+a,b=10,20 // different ways of initialising variable
+
+?: //ternary operator
+
+basically showing python is easy language
+
+in java
+------
+int a,b,c;
+a=10;
+b=20;
+c=(a<b)?30:40;
+System.out.println(c);
+------
+
+in python
+---------
+a,b=10,20
+c=30 if a<b else 40
+
+identifiers:
+------------
+identifier ----> the name is considered as the identifer (identify the person)
+
+several names
+- variable names
+- method names
+- class names
+
+A name in python program is considered as identifier. 
+
+
+x = 10 
+x -> identifier
+10 -> literal
