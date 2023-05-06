@@ -1,0 +1,94 @@
+string:
+-------
+slice operator:
+---------------
+used using []
+
+[] to retrieve part of the string
+
+syntax:
+-------
+s[begin:end]
+	it returns substring from begin index to end-1 index.
+	
+s[5:11] -> 5th index to 10th index
+
+if we are taking begin, then it will consider the beginning of the string 
+and its default value is zero.
+
+s[:8] --> from 0th to 7th
+
+if we are not specifying end index
+then it will consider end of the string
+
+s[:] --> total string we are going to get
+
+s='abcdefghijklmnopqrstuvwxyz'
+s[:5]
+s[:50000000] 
+
+slice operator wont raise any indexError
+if the index is out of range , then it will consider upto available characters only.
+
+s[7:2] -> it will return empty string.
+
+s[7:4]
+s[begin:end:step] default step value is 1 and it will always move in the forward 
+direction
+
+first character uppercase 
+s='durga'
+s[0].upper()+s[1:]
+
+last character uppercase
+s[0:len(s)-1]+s[-1].upper()
+
+first and last character uppercase
+s[0].upper()+s[1:len(s)-1]+s[-1].upper()
+
+Mathematical operators for the string:
+--------------------------------------
+s='durga'+'soft'
+'durga'+10 
+
+if we apply + operator for the strings
+both arguements should be str type
+
+s = 'durga' * 5
+int * str is allowed 
+str * int is allowed 
+
+str * str is not allowed
+
+if we apply * for string , one argument should be str and other argument should be int
+
+2*'ab'*3 , o/p = ?
+
+Type casting:
+-------------
+Type coersion
+
+int()
+float()
+complex()
+bool()
+str()
+
+1. int():
+---------
+We can use this function to convert from other types to int
+
+int(x)
+
+We can convert from any type to int except complex type.
+If we want to convert str to int type , string should represent only integral value
+and should be specified only in decimal form(base-10)
+
+int(10.5)
+int(10.9)
+int(True)
+int(False)
+int('100')
+int('10.5')
+int('0B1010')
+int('durga')
