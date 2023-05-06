@@ -1,0 +1,121 @@
+2. float():
+------------
+convert from other types to float types
+
+int-->float float(10)
+complex--> float(10+20j)
+bool--> float  float(True)
+str-->float float('10') , float('10.5') , float('0B1010')
+
+str should contain either integral value or floating point value , but compulsory
+we should use base-10 only.
+
+float(0b111111) and float(0X7564)
+
+3. complex():
+-----------
+from other types to complex type
+a+bj
+
+from any type to complex is possible
+
+complex(x),complex(x,y)
+
+complex(x):
+	x will become real part
+	imaginary part will become 0
+	
+complex(x,y):
+	x will become real part
+	y will become imaginary part
+	
+complex(10) --> 10 + 0j
+complex(10.5) --> 10.5 + 0j
+complex(True) --> 1+0j
+complex(false) ---> 0j
+complex('10') -->  10+0j
+complex('10.5') --> 10.5 + 0j
+complex('ten') --> ValueError
+
+complex(x,y) 
+
+complex(10,20) --> 10+20j
+complex(10.5,20.6) --> 10.5+20.6j
+complex(True,False) --> 1 + 0j
+complex('10','20') 
+complex(10,'20')
+
+The second argument can not be string.
+If the first argument is string , then we cannot pass the second argument.
+
+
+4. bool()
+---------
+From other types to bool
+
+int --> bool
+	bool(0)
+	bool(1)
+	bool(2)
+	
+float--> bool
+	bool(0.0)
+	bool(0.0000000000001)
+	
+complex -> bool
+if both real and imaginary parts are zero then its false 
+otherwise it is true.
+
+bool(0+0j)
+
+str --> bool
+'''All this things are true only'''
+	bool('True')
+	bool('False')
+	bool('Yes')
+	bool('No')
+	
+if the string is empty then it will consider false except True.
+	bool('')
+	
+5. str():
+---------
+str(10)
+str(10.5)
+str(10+20j)
+str(True)
+str(0B1111)
+
+Fundamental Data Types vs Immutability:
+---------------------------------------
+All fundamental data types are immutable:
+In python everything is treated as object only.
+immutable ==> we cannot change
+Once we create an object we cannot change its content. If we are trying to change the 
+content , with those changes a new object will be created.
+
+x=10
+x -> reference variable for that object. 
+x = x+1
+
+x=10
+print(id(x))
+x=x+1
+print(id(x))
+
+x=10
+y=x
+print(id(x))
+print(id(y))
+y=y+1
+print(id(x))
+print(id(y))
+
+*y is changing but x will not be changing*
+
+x=True
+print(id(x))
+x=False
+print(id(y))
+
+*now True will be garbage value*
